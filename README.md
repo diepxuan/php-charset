@@ -25,6 +25,7 @@ Output: To^i te^n la\` Ngo^ Chi' Du~ng. Ngu+o+\`i d-a~ ta.o ra ca'i pha^\`n me^\
 
 Available Methods
 -----------------
+```php
 - convert($input)
 - convert($input,'unicode','virq');
 - convert($input,'unicode','vnet');
@@ -36,6 +37,7 @@ Available Methods
 - ucwords($input)
 
 Whereas $input = a unicode string
+```
 
 LICENSE
 -------
