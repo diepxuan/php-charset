@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @author     Tran Ngoc Duc <ductn@diepxuan.com>
  * @author     Tran Ngoc Duc <caothu91@gmail.com>
  *
- * @lastupdate 2024-05-09 11:24:26
+ * @lastupdate 2024-05-09 14:53:30
  */
 
 namespace Diepxuan\Charset;
@@ -16,7 +16,7 @@ namespace Diepxuan\Charset;
 /**
  * VnEcoding.
  */
-class VnEcoding extends \stdClass
+class VnEncoding extends \stdClass
 {
     protected vn_charset_conversion $converter;
 
