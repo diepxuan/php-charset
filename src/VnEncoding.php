@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Diepxuan\Charset;
 
 /**
- * test.
+ * VnEcoding.
  */
 class VnEcoding extends \stdClass
 {

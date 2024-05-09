@@ -1,18 +1,26 @@
 <?php
 
-// module_path("diepxuan/php-charset")."/vn_charset_conversion.php"
+declare(strict_types=1);
 
-$libPath = module_path("diepxuan/php-charset", 'vn_charset_conversion.php');
-if ((new \SplFileInfo(module_path("diepxuan/php-charset", 'vn_charset_conversion.php')))->isFile()) {
-    include_once "$libPath";
-}
+/*
+ * @copyright  © 2019 Dxvn, Inc.
+ *
+ * @author     Tran Ngoc Duc <ductn@diepxuan.com>
+ * @author     Tran Ngoc Duc <caothu91@gmail.com>
+ *
+ * @lastupdate 2024-05-09 14:51:17
+ */
+
+use Diepxuan\Charset\VnEcoding;
 
 if (!function_exists('vn_convert_encoding')) {
     /**
      * List packages.
+     *
+     * @param mixed $string
      */
     function vn_convert_encoding($string): string
     {
-        return new \Diepxuan\Charset\VnEcoding($string);
+        return new VnEcoding($string);
     }
 }
