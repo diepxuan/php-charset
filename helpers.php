@@ -1,6 +1,11 @@
 <?php
 
-// require_one "./vn_charset_conversion.php";
+// module_path("diepxuan/php-charset")."/vn_charset_conversion.php"
+
+$libPath = module_path("diepxuan/php-charset", 'vn_charset_conversion.php');
+if ((new \SplFileInfo(module_path("diepxuan/php-charset", 'vn_charset_conversion.php')))->isFile()) {
+    include_once "$libPath";
+}
 
 if (!function_exists('vn_convert_encoding')) {
     /**
