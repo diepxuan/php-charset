@@ -1,0 +1,32 @@
+{
+  "name": "diepxuan/php-charset",
+  "description": "A php package that converts Vietnamese characters into different character set",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tran Ngoc Duc",
+      "email": "ductn@diepxuan.com"
+    },
+    {
+      "name": "Kenny Ngo",
+      "homepage": "https://github.com/kenny-ngo/vietnamese-converter"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "files": [
+      "helpers.php"
+    ],
+    "psr-4": {
+      "Diepxuan\\Charset\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Diepxuan\\Charset\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {}
+  }
+}
