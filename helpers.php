@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @author     Tran Ngoc Duc <ductn@diepxuan.com>
  * @author     Tran Ngoc Duc <caothu91@gmail.com>
  *
- * @lastupdate 2024-05-09 14:51:17
+ * @lastupdate 2024-05-09 14:56:16
  */
 
-use Diepxuan\Charset\VnEcoding;
+use Diepxuan\Charset\VnEncoding;
 
 if (!function_exists('vn_convert_encoding')) {
     /**
@@ -21,6 +21,6 @@ if (!function_exists('vn_convert_encoding')) {
      */
     function vn_convert_encoding($string): string
     {
-        return new VnEcoding($string);
+        return (string) new VnEncoding($string);
     }
 }
