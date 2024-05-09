@@ -1,6 +1,7 @@
 {
   "name": "diepxuan/php-charset",
   "description": "A php package that converts Vietnamese characters into different character set",
+  "type": "library",
   "license": "MIT",
   "authors": [
     {
