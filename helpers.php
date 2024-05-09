@@ -1,6 +1,6 @@
 <?php
 
-require_one "vn_charset_conversion.php";
+// require_one "./vn_charset_conversion.php";
 
 if (!function_exists('vn_convert_encoding')) {
     /**
